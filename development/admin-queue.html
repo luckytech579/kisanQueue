@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Manage Queue - KisanQueue
+    </title>
+
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <h2>
+            KisanQueue Admin
+        </h2>
+
+
+        <nav>
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+
+            <a href="index.html">
+                Farmer Portal
+            </a>
+
+
+            <a href="#" id="logoutBtn">
+                Logout
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <section class="admin-queue-section">
+
+
+            <h1>
+                Queue Management
+            </h1>
+
+
+            <p>
+                Manage the active procurement queue.
+            </p>
+
+
+
+            <div class="current-queue-card">
+
+
+                <h2>
+                    Currently Serving
+                </h2>
+
+
+                <div
+                    class="admin-current-token"
+                    id="adminCurrentToken"
+                >
+
+                    A087
+
+                </div>
+
+
+                <button
+                    id="nextTokenBtn"
+                >
+
+                    Next Farmer →
+
+                </button>
+
+
+            </div>
+
+
+
+            <div class="queue-management-list">
+
+
+                <h2>
+                    Active Queue
+                </h2>
+
+
+
+                <div class="admin-queue-item">
+
+                    <div>
+
+                        <strong>
+                            A085
+                        </strong>
+
+                        <span>
+                            Ram Kumar
+                        </span>
+
+                    </div>
+
+
+                    <span class="completed-status">
+
+                        Completed ✓
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="admin-queue-item">
+
+                    <div>
+
+                        <strong>
+                            A086
+                        </strong>
+
+                        <span>
+                            Mohan Singh
+                        </span>
+
+                    </div>
+
+
+                    <span class="completed-status">
+
+                        Completed ✓
+
+                    </span>
+
+                </div>
+
+
+
+                <div
+                    class="admin-queue-item active-admin-token"
+                >
+
+                    <div>
+
+                        <strong id="activeTokenRow">
+
+                            A087
+
+                        </strong>
+
+
+                        <span>
+
+                            Suresh Kumar
+
+                        </span>
+
+                    </div>
+
+
+                    <span>
+
+                        🔄 Processing
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="admin-queue-item">
+
+                    <div>
+
+                        <strong>
+
+                            A088
+
+                        </strong>
+
+
+                        <span>
+
+                            Ravi Sharma
+
+                        </span>
+
+                    </div>
+
+
+                    <span>
+
+                        Waiting
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="admin-queue-item">
+
+                    <div>
+
+                        <strong>
+
+                            A089
+
+                        </strong>
+
+
+                        <span>
+
+                            Amit Kumar
+
+                        </span>
+
+                    </div>
+
+
+                    <span>
+
+                        Waiting
+
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 KisanQueue
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

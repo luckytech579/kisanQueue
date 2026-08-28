@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farmer Registration - KisanQueue</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>KisanQueue</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Track Token</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="registration">
+
+            <h1>Farmer Registration</h1>
+
+            <p>
+                Enter your details to continue with procurement booking.
+            </p>
+
+
+            <form id="registrationForm">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <label for="mobile">Mobile Number</label>
+                <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="Enter your mobile number"
+                    required
+                >
+
+
+                <label for="farmerId">Farmer ID</label>
+                <input
+                    type="text"
+                    id="farmerId"
+                    placeholder="Enter your farmer ID"
+                    required
+                >
+
+
+                <label for="village">Village</label>
+                <input
+                    type="text"
+                    id="village"
+                    placeholder="Enter your village"
+                    required
+                >
+
+
+                <label for="district">District</label>
+                <input
+                    type="text"
+                    id="district"
+                    placeholder="Enter your district"
+                    required
+                >
+
+
+                <label for="crop">Select Crop</label>
+
+                <select id="crop">
+
+                    <option value="Wheat">Wheat</option>
+
+                    <option value="Rice">Rice</option>
+
+                    <option value="Maize">Maize</option>
+
+                    <option value="Mustard">Mustard</option>
+
+                </select>
+
+
+                <label for="quantity">
+                    Quantity (Quintal)
+                </label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    placeholder="Enter quantity"
+                    required
+                >
+
+
+                <button type="submit">
+                    Continue
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 KisanQueue</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
