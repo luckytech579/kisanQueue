@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Today's Crop Prices - KisanQueue</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h1>KisanQueue</h1>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="queue.html">Track Token</a>
+
+            <a href="about.html">About</a>
+
+            <a href="register.html">Register</a>
+
+            <a href="centres.html">Centres</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN SECTION -->
+
+    <main class="price-page">
+
+
+        <!-- PAGE TITLE -->
+
+        <section class="price-header">
+
+            <h2>Today's Crop Prices</h2>
+
+            <p>
+                Check the latest market prices of major crops
+                before visiting the procurement centre.
+            </p>
+
+            <p id="today-date"></p>
+
+        </section>
+
+
+        <!-- STATE SELECTION -->
+
+        <section class="price-controls">
+
+            <label for="state">
+
+                Select State
+
+            </label>
+
+
+            <select id="state">
+
+                <option>Uttar Pradesh</option>
+
+                <option>Haryana</option>
+
+                <option>Punjab</option>
+
+                <option>Madhya Pradesh</option>
+
+                <option>Rajasthan</option>
+
+            </select>
+
+
+            <!-- SEARCH BOX -->
+
+            <input
+                type="text"
+                id="searchCrop"
+                placeholder="Search crop..."
+            >
+
+
+        </section>
+
+
+        <!-- PRICE CARDS -->
+
+        <section class="crop-container">
+
+
+            <!-- WHEAT -->
+
+            <div class="crop-card">
+
+                <h3>🌾 Wheat</h3>
+
+                <p class="crop-name">
+                    <!-- गेहूं -->
+                </p>
+
+                <p class="price">
+
+                    ₹ 2,425
+
+                    <span>/ Quintal</span>
+
+                </p>
+
+                <p class="status positive">
+
+                    ↑ Updated Today
+
+                </p>
+
+            </div>
+
+
+
+            <!-- RICE -->
+
+            <div class="crop-card">
+
+                <h3>🌾 Rice</h3>
+
+                <p class="crop-name">
+                    <!-- चावल -->
+                </p>
+
+                <p class="price">
+
+                    ₹ 2,600
+
+                    <span>/ Quintal</span>
+
+                </p>
+
+                <p class="status positive">
+
+                    ↑ Updated Today
+
+                </p>
+
+            </div>
+
+
+
+            <!-- BARLEY -->
+
+            <div class="crop-card">
+
+                <h3>🌾 Barley</h3>
+
+                <p class="crop-name">
+                    <!-- जौ -->
+                </p>
+
+                <p class="price">
+
+                    ₹ 2,150
+
+                    <span>/ Quintal</span>
+
+                </p>
+
+                <p class="status positive">
+
+                    ↑ Updated Today
+
+                </p>
+
+            </div>
+
+
+
+            <!-- MAIZE -->
+
+            <div class="crop-card">
+
+                <h3>🌽 Maize</h3>
+
+                <p class="crop-name">
+                    <!-- मक्का -->
+                </p>
+
+                <p class="price">
+
+                    ₹ 2,300
+
+                    <span>/ Quintal</span>
+
+                </p>
+
+                <p class="status positive">
+
+                    ↑ Updated Today
+
+                </p>
+
+            </div>
+
+
+
+            <!-- MUSTARD -->
+
+            <div class="crop-card">
+
+                <h3>🌿 Mustard</h3>
+
+                <p class="crop-name">
+                    <!-- सरसों -->
+                </p>
+
+                <p class="price">
+
+                    ₹ 5,800
+
+                    <span>/ Quintal</span>
+
+                </p>
+
+                <p class="status positive">
+
+                    ↑ Updated Today
+
+                </p>
+
+            </div>
+
+
+
+            <!-- POTATO -->
+
+            <div class="crop-card">
+
+                <h3>🥔 Potato</h3>
+
+                <p class="crop-name">
+                    <!-- आलू -->
+                </p>
+
+                <p class="price">
+
+                    ₹ 1,500
+
+                    <span>/ Quintal</span>
+
+                </p>
+
+                <p class="status positive">
+
+                    ↑ Updated Today
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- IMPORTANT INFORMATION -->
+
+        <section class="price-info">
+
+            <h3>Important Information</h3>
+
+            <p>
+
+                Prices may vary depending on the market,
+                procurement centre, crop quality and location.
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const date = new Date();
+
+        document.getElementById("today-date").innerText =
+            "Date: " + date.toDateString();
+
+
+        const searchInput =
+            document.getElementById("searchCrop");
+
+
+        searchInput.addEventListener("keyup", function () {
+
+            let searchValue =
+                searchInput.value.toLowerCase();
+
+
+            let cropCards =
+                document.querySelectorAll(".crop-card");
+
+
+            cropCards.forEach(function (card) {
+
+                let cropName =
+                    card.innerText.toLowerCase();
+
+
+                if (
+                    cropName.includes(searchValue)
+                ) {
+
+                    card.style.display = "block";
+
+                }
+
+                else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
