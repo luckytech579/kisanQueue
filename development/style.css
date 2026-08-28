@@ -327,9 +327,36 @@ footer{
     margin-top: 30px;
     padding: 14px 30px;
 }
+.confirm-btn:hover {
+    background: #166534;
+    color: white;
+    animation: scaleUp 0.2s ease-in-out;
+}
 
 
+.confirm-btn:active {
+    transform: scale(0.98);
+}
 
+/* .book a slot {
+    background: #166534;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+} */
+
+/* .book-a-slot:hover {
+    background: #166534;
+    color: rgb(10, 223, 28);
+    animation: scaleUp 0.2s ease-in-out;
+}
+.track-your-token:hover {
+    background: #166534;
+    color: white;
+    animation: scaleUp 0.2s ease-in-out;
+} */
 
 
 
@@ -875,3 +902,273 @@ footer{
 
     font-weight: bold;
 }
+
+
+/*crop prices*/
+
+
+/* =========================
+   CROP PRICES PAGE
+========================= */
+
+.price-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+/* HEADER */
+
+.price-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.price-header h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #2f4f3e;
+}
+
+.price-header p {
+    font-size: 17px;
+    color: #666;
+    margin: 8px 0;
+}
+
+
+/* CONTROLS */
+
+.price-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+.price-controls label {
+    font-weight: bold;
+}
+
+.price-controls select,
+.price-controls input {
+    padding: 12px 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.price-controls input {
+    width: 220px;
+}
+
+
+/* CROP CARDS CONTAINER */
+
+.crop-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* SINGLE CROP CARD */
+
+.crop-card {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+/* HOVER EFFECT */
+
+.crop-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+/* CROP NAME */
+
+.crop-card h3 {
+
+    font-size: 23px;
+
+    color: #2f4f3e;
+
+    margin-bottom: 8px;
+}
+
+
+/* HINDI CROP NAME */
+
+.crop-name {
+
+    color: #777;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+/* PRICE */
+
+.price {
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #198754;
+
+    margin-bottom: 12px;
+}
+
+
+/* QUINTAL TEXT */
+
+.price span {
+
+    font-size: 14px;
+
+    color: #666;
+
+    font-weight: normal;
+}
+
+
+/* STATUS */
+
+.status {
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* POSITIVE STATUS */
+
+.positive {
+
+    color: green;
+}
+
+
+/* INFORMATION BOX */
+
+.price-info {
+
+    background-color: #f5f8f6;
+
+    padding: 25px;
+
+    margin-top: 50px;
+
+    border-left:
+        5px solid #198754;
+
+    border-radius: 8px;
+}
+
+
+.price-info h3 {
+
+    margin-bottom: 10px;
+
+    color: #2f4f3e;
+}
+
+
+.price-info p {
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .price-header h2 {
+
+        font-size: 28px;
+    }
+
+
+    .price-controls {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .price-controls input {
+
+        width: auto;
+    }
+
+}
+
+
+/*buttons*/
+
+
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.book-a-slot, .track-your-token ,.view-crop-prices {
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: 1px solid black;  
+
+     color: green;
+    background: white;}
+
+    /* .book-a-slot, .track-your-token ,.view-crop-prices:hove {
+        background: green;
+        color: white;
+       
+    } */
+
+
+
+
+
